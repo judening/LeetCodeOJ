@@ -18,47 +18,43 @@ class Solution:
                 if head is None:
                     lists.remove(head)
 
-            newHead = lists[0]
+            z = lists[0]
             for i in range(1,len(lists)):
-                sortedHead = lists[i]
-                iterPrev = None
-                iterHead = newHead
-                while sortedHead is not None and iterHead is not None:
-                    if sortedHead.val <= iterHead.val:
-                        temp = sortedHead.next
-                        sortedHead.next = iterHead
+                y = lists[i]
+                z = self.mergeTwoList(z,y)
+        return z
 
-                        if iterPrev is None:
-                            newHead = sortedHead
-                        else:
-                            iterPrev.next = sortedHead
 
-                        iterPrev = sortedHead
-                        sortedHead = temp
-                    else:
-                        iterPrev = iterHead
-                        iterHead = iterHead.next
-                        iterNone = True
+    def mergeTwoList(self,list1,list2):
+        head = None
+        cur = None
+        next1 = None
+        next2 = None
+        if list1.val <= list2.val:
+            cur = list1
+            next1 = cur.next
+            next2 = list2
+        else:
+            cur = list2
+            next1 =cur.next
+            next2 = list1
 
-                        while iterHead is not None:
-                            print "I should be able to see -2 here, right?" , sortedHead.val
-                            if sortedHead.val <= iterHead.val:
-                                print iterPrev.val
-                                iterPrev.next = sortedHead
-                                temp = sortedHead.next
-                                sortedHead.next = iterHead
-                                sortedHead = temp
-                                iterNone = False
-                                break
-                            else:
-                                iterPrev = iterHead
-                                iterHead = iterHead.next
+        head = cur
+        while next1 and next2:
+            if next1.val <= next2.val:
+                cur.next = next1
+                cur = next1
+                next1 = next1.next
+            else:
+                cur.next = next2
+                cur = next2
+                next2 = next2.next
+        if next1:
+            cur.next = next1
+        else:
+            cur.next = next2
 
-                        if iterNone:
-                            iterPrev.next = sortedHead
-                            sortedHead.next = iterHead
-                            break
-            return newHead
+        return head
 
 Head = ListNode(-1)
 a = ListNode(1)
@@ -85,11 +81,9 @@ k = ListNode(6)
 l = ListNode(7)
 Head_3.next = k
 k.next = l
-f = [Head,Head_1,Head_2,Head_3]
+
+Head_4 = ListNode(None)
+f = [Head,Head_1,Head_2,Head_3,Head_4]
 e = Solution()
 g = e.mergeKLists(f)
 
-print "Print out the list here."
-while g is not None:
-    print g.val
-    g = g.next
