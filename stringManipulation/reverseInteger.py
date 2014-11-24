@@ -2,6 +2,7 @@
 # 1. Reversed integer overflow? 214748364
 # 2. What's the outpul for integer like 10,100?
 # 3. The original integer overflow?
+# 4. Better to use build-in string reverse?
 
 class Solution:
     def reverse(self,x):
@@ -10,14 +11,12 @@ class Solution:
         if x < 0:
             flag = True
             x = abs(x)
-        while x !=0:
-            if x > 2147483647
-                return 0
-            ret = ret * 10 + x%10
-            x = x/10
-        #This is really subtle, check the reversed result and see if it exceed int
-        if ret > 2147483647:
+        if x > 2147483647
+            return 0
+        ret = str(x)[::-1]
+        numRet = int(ret)
+        if numRet > 2147483647:
             return 0
         if flag:
-            ret = ret*-1
-        return ret
+            numRet = numRet*-1
+        return numRet
