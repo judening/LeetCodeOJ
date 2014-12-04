@@ -10,18 +10,12 @@ class Solution:
     def deleteDuplicates(self, head):
         newHead = head
         tmp = newHead
-        
         if head is None:
             return None
-        
         while head is not None:
             head = head.next
             if head is not None:
                 if head.val !=tmp.val:
                     tmp.next = head
                     tmp = tmp.next
-        
-        
         return newHead
-        
-        
