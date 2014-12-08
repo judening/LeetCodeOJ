@@ -1,12 +1,10 @@
 class Solution:
-
     def totalNQueens(self, n):
         self.res = []
         arry = []
         self.helper(arry,0)
         num = len(self.res)
         return num
-
     def helper(self,arry,row):
         if row == len(arry):
             self.res.append(arry)
@@ -17,7 +15,6 @@ class Solution:
                 arry[row][i] = 'Q'
                 self.helper(arry,row+1)
                 arry[row][col] = '.'
-
 
     def isValid(self,arry,row,col):
         #Check rows
