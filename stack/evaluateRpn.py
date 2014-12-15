@@ -11,8 +11,8 @@ class Solution:
                 if i not in operations:
                     stack.append(i)
                 else:
-                    a = stack.pop(-1)
-                    b = stack.pop(-1)
+                    a = stack.pop()
+                    b = stack.pop()
                     if i == '+':
                         stack.append(int(b) + int(a))
                     elif i == '-':

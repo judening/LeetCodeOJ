@@ -1,5 +1,6 @@
 class Solution:
-
+    #This is also a DFS
+    #But it creates more spaces to store the array of all the permutations from 0 to N
     def permute(self,num):
         if len(num) == 1: return [num]
         if len(num) == 0: return []
