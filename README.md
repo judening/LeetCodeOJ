@@ -1,8 +1,8 @@
 LeetCodeOJ
 ==========
 Solutions to the leetcode problems
-Already Summarized:
-singleNumber.py
+=Already Summarized:
+=singleNumber.py
 maxDepth.py
 sameTree.py
 maxProfitII.py (best time to buy and sell stock II)
