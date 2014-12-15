@@ -21,11 +21,8 @@ class Solution:
                     toAdd = toAdd + direction
                     counter = 1
                     dic[a[toAdd]].append(s[i])
-                    
             for i in range(len(a)):
                 newStr = newStr+a[i] + "".join(dic[a[i]]).strip()
             return newStr
         else:
             return s
-        
-        

@@ -16,8 +16,6 @@ class Solution:
                     subCounter = subCounter + 1
 
             temp = temp + str(subCounter) + subLast
-
             last = temp
             counter = counter + 1
-
         return last

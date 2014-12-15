@@ -22,10 +22,8 @@ class Solution:
                 else:
                     if ratings[i-1] < ratings[i]:
                         candyArray[i] = candyArray[i-1]+1
-            
             ratings.reverse()
             candyArray.reverse()
-            
             for i in range(len(ratings)):
                 if i-1<0:
                     #check right
@@ -43,6 +41,6 @@ class Solution:
                 else:
                     if ratings[i-1] < ratings[i]:
                         candyArray[i] = candyArray[i-1]+1
-    
+
             reNum = sum(candyArray)
         return reNum
