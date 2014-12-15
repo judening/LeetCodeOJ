@@ -3,6 +3,7 @@ LeetCodeOJ
 Solutions to the leetcode problems
 
 -Already Summarized:
+
 1. singleNumber.py
 
 2. maxDepth.py
