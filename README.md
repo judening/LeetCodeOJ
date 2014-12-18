@@ -87,3 +87,5 @@ Solutions to the leetcode problems
 41. rotateImage.py
 
 42. search2DMatrix.py
+
+43. plusOne.py
