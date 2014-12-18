@@ -1,4 +1,6 @@
 class Solution:
+    # Do not treat the matrix as a 2d array, multiply m*n and treat it
+    # as an array
     def searchMatrix(self,matrix,target):
         if not matrix:
             return False
@@ -6,6 +8,7 @@ class Solution:
             start = 0
             rows = len(matrix)
             cols = len(matrix[0])
+            #This is so freaking smart
             end = rows*cols-1
             while start<=end:
                 mid = start + (end-start)/2
