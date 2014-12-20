@@ -89,3 +89,7 @@ Solutions to the leetcode problems
 42. search2DMatrix.py
 
 43. plusOne.py
+
+44. symmetricTree.py
+
+45. mergedSortedArray.py
