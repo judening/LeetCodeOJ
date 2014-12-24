@@ -78,7 +78,7 @@ Solutions to the leetcode problems
 
 37. copyRandomList.py
 
-38. strStr.py (twoPointers slow version - need to implement z algorithm/KMP algorithm)
+38. strStr.py (twoPointers slow version and z alg are implemented - need to implement KMP algorithm)
 
 39. containerWithMostWater.py (slower and faster version)
 

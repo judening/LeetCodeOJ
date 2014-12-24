@@ -3,7 +3,7 @@ class Solution:
     def strStr(self,haystack,needle):
         if len(needle) > len(haystack) or (needle and not haystack):
             return -1
-        elif len(not needle and not haystack) or (haystack and not needle):
+        elif (not needle and not haystack) or (haystack and not needle):
             return 0
         else:
             j = 0
