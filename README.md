@@ -93,3 +93,5 @@ Solutions to the leetcode problems
 44. symmetricTree.py
 
 45. mergedSortedArray.py
+
+46. spiralMatrix.py
