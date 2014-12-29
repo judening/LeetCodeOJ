@@ -95,3 +95,7 @@ Solutions to the leetcode problems
 45. mergedSortedArray.py
 
 46. spiralMatrix.py
+
+47. sqrt.py
+
+48. wordBreak.py (DFS version, need to implement DP version)
