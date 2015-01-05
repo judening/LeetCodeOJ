@@ -101,3 +101,5 @@ Solutions to the leetcode problems
 48. wordBreak.py (DFS version, need to implement DP version)
 
 49. wordBreakII.py (DFS version, DP version)
+
+50. numDistinct.py (distinct-subsequences)
