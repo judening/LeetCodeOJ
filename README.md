@@ -105,3 +105,5 @@ Solutions to the leetcode problems
 50. numDistinct.py (distinct-subsequences)
 
 51. nQueensII.py (have basic version and advanced version, need FANCY version)
+
+52. singleNumberII.py
