@@ -103,3 +103,5 @@ Solutions to the leetcode problems
 49. wordBreakII.py (DFS version, DP version)
 
 50. numDistinct.py (distinct-subsequences)
+
+51. nQueensII.py (have basic version and advanced version, need FANCY version)
