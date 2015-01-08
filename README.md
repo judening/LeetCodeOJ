@@ -113,3 +113,5 @@ Solutions to the leetcode problems
 54. stringToInt.py
 
 55. isValidSudoku.py
+
+56. solveSudoku.py
