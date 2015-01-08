@@ -106,6 +106,10 @@ Solutions to the leetcode problems
 
 51. nQueensII.py (have basic version and advanced version, need FANCY version)
 
-52. singleNumberII.py
+52. singleNumberII.py (pay extra attention to the solution)
 
 53. postorderTraversal.py (DFS version and Reverse version, need threaded tree)
+
+54. stringToInt.py
+
+55. isValidSudoku.py
