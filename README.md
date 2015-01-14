@@ -126,4 +126,6 @@ Solutions to the leetcode problems
 
 61. largestRectangleArea.py (I got the smart one, need a divide-conquer one)
 
-62. maxProfitIII.py
+62. maxProfitIII.py 
+
+63. isMatch.py (regular expression matching/DP version available, DFS version needed)
