@@ -130,4 +130,4 @@ Solutions to the leetcode problems
 
 63. isMatch.py (regular expression matching/DP version available, DFS version needed)
 
-64. logestPalindrom.py (Greedy Algorithm one, need DP and Manechester ones)
+64. logestPalindrom.py (Greedy Algorithm one - n^3,DP n^2 and Manechester ones)
