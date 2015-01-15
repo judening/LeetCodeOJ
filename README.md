@@ -131,3 +131,5 @@ Solutions to the leetcode problems
 63. isMatch.py (regular expression matching/DP version available, DFS version needed)
 
 64. logestPalindrom.py (Greedy Algorithm one - n^3,DP n^2 and Manechester ones)
+
+65. maximalRectangle.py (N^3 solution, need to optimize it)
