@@ -92,7 +92,7 @@ Solutions to the leetcode problems
 
 44. symmetricTree.py
 
-45. mergedSortedArray.py
+45. mergedSortedArray.py ( I have an easier version, but didn't get AC by leetcode)
 
 46. spiralMatrix.py
 
