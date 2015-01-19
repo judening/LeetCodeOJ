@@ -143,3 +143,5 @@ Solutions to the leetcode problems
 69. twoSum.py (dictionary is pretty weird, see pythonTrick for details)
 
 70. threeSumClosest.py (read twice)
+
+71. countAndSay.py

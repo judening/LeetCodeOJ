@@ -11,6 +11,9 @@ class Solution:
             j = i
 
             while j < stop:
+                # Pay attention here, the offset is distance from
+                # j to i. Because of the symetric reason, we should
+                # calculate the distance from stop, which is stop-offset
                 offset = j-i
                 first = matrix[i][j]
                 matrix[i][j] = matrix[stop-offset][i]
