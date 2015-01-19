@@ -1,50 +1,24 @@
 class Solution:
-
     def spiralOrder(self,matrix):
+        toRet = []
         if matrix:
-            matrixCopy = list(matrix)
-            toRet = []
-
-            while matrixCopy:
-                n = len(matrixCopy[0])
-                i = 0
-                while i < n:
-                    toRet.append(matrixCopy[0][i])
-                    i +=1
-                del matrixCopy[0]
-                print matrixCopy
-                if not matrixCopy:
-                    break
-
-                m = len(matrixCopy)
-                j = 0
-                while j < m:
-                    toRet.append(matrixCopy[j][-1])
-                    del matrixCopy[j][-1]
-                    j +=1
-                if not matrixCopy or not matrixCopy[0]:
-                    break
-
-                n = len(matrixCopy[0])
-                i = n-1
-                while i>=0:
-                    toRet.append(matrixCopy[-1][i])
-                    i -=1
-                print matrixCopy
-                if not matrixCopy:
-                    break
-
-                m = len(matrixCopy)
-                j = m-1
-                while j >=0:
-                    toRet.append(matrixCopy[j][0])
-                    del matrixCopy[j][0]
-                    j -=1
-                if not matrixCopy or not matrixCopy[0]:
-                    break
-            return toRet
-        else:
-            return None
-
-s = Solution()
-print s.spiralOrder([[7],[9],[6]])
+            rowBegin = 0
+            rowEnd = len(matrix)-1
+            colBegin = 0
+            colEnd = len(matrix[0])-1
+            while rowBegin<=rowEnd and colBegin<=colEnd:
+                for i in xrange(colBegin,colEnd+1):
+                    toRet.append(matrix[rowBegin][i])
+                rowBegin+=1
+                for i in xrange(rowBegin,rowEnd+1):
+                    toRet.append(matrix[i][colEnd])
+                colEnd-=1
+                if rowBegin<=rowEnd:
+                    for i in xrange(colEnd,colBegin-1,-1):
+                        toRet.append(matrix[rowEnd][i])
+                rowEnd -=1
+                if colBegin<=colEnd:
+                    for i in xrange(rowEnd,rowBegin-1,-1):
+                        toRet.append(matrix[i][colBegin])
+                colBegin+=1
+        return toRet
