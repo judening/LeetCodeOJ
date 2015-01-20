@@ -145,3 +145,9 @@ Solutions to the leetcode problems
 70. threeSumClosest.py (read twice)
 
 71. countAndSay.py
+
+72. buildTreeInorderPostorder.py
+
+73. buildTreeInorderPreorder.py
+
+74. trap.py
