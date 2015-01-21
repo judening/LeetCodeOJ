@@ -150,4 +150,4 @@ Solutions to the leetcode problems
 
 73. buildTreeInorderPreorder.py
 
-74. trap.py
+74. trap.py (two pointers version, need the stack version)
