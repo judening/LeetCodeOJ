@@ -161,3 +161,5 @@ Solutions to the leetcode problems
 78. searchRange.py (I suspect the one i wrote is O(logn), the smart one is def O(logn) tho)
 
 79. searchInRotatedSortedArrayII.py 
+
+80. jumpGameII.py
