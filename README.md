@@ -169,3 +169,5 @@ Solutions to the leetcode problems
 82. removeDuplicatesFromSortedArrayII.py
 
 83. fourSum.py
+
+84. longestConsecutiveSequence.py
