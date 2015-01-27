@@ -163,3 +163,7 @@ Solutions to the leetcode problems
 79. searchInRotatedSortedArrayII.py 
 
 80. jumpGameII.py
+
+81. threeSum.py
+
+82. removeDuplicatesFromSortedArrayII.py
