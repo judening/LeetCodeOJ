@@ -173,3 +173,5 @@ Solutions to the leetcode problems
 84. longestConsecutiveSequence.py
 
 85. uniquePathsII.py
+
+86. combinationSum2.py
