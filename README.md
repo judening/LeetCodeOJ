@@ -185,3 +185,5 @@ Solutions to the leetcode problems
 90. mergeIntervals.py
 
 91. wordSearch.py
+
+92. combinationSum.py
