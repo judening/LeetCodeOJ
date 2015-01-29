@@ -181,3 +181,5 @@ Solutions to the leetcode problems
 88. nextPermutation.py (memorize it)
 
 89. firstMissingPositive.py
+
+90. mergeIntervals.py
