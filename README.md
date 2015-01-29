@@ -179,3 +179,5 @@ Solutions to the leetcode problems
 87. triangle.py
 
 88. nextPermutation.py (memorize it)
+
+89. firstMissingPositive.py
