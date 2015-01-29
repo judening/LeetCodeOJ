@@ -175,3 +175,7 @@ Solutions to the leetcode problems
 85. uniquePathsII.py
 
 86. combinationSum2.py
+
+87. triangle.py
+
+88. nextPermutation.py (memorize it)
