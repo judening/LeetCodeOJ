@@ -189,3 +189,5 @@ Solutions to the leetcode problems
 92. combinationSum.py
 
 93. wordLaddger.py
+
+94. subsets.py
