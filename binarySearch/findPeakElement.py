@@ -1,22 +1,22 @@
 class Solution:
-
-    def findPeakElement(self,num):
-        self.maxNumIndex = None
-        self.binarySearch(num,None,0,len(num)-1)
-        return self.maxNum
-
-    def binarySearch(self,num,value,start,end):
-        if start>end:
-            return
-        else:
-            #avoid overflow
-            mid = start + (end-start)/2
-            if value:
-                if num[mid] > value:
-                    self.maxNum = mid
-                    value = num[mid]
+    # Remember it needs O(logn)
+    # If you don't do a if conditions, you will endup finding the array
+    # O(n)
+    def findPeakElement(self, num):
+        if num:
+            l = 0
+            r = len(num)-1
+            while (l < r):
+                mid = (l+r)/2
+                if num[mid] > num[mid-1] and num[mid] > num[mid+1]:
+                    return mid
+                elif num[mid] < num[mid-1]:
+                    r = mid
                 else:
-                    self.maxNum = mid
-                    value = num[mid]
-                self.binarySearch(num,value,start,mid-1)
-                self.binarySearch(num,value,mid+1,end)
+                    l = mid+1
+            if num[0] > num[len(num)-1]:
+                return 0
+            else:
+                return len(num)-1
+        else:
+            return 0
