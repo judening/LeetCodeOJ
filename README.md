@@ -197,3 +197,9 @@ Solutions to the leetcode problems
 96. jumpGame.py
 
 97. searchInRotatedSortedArray.py
+
+98. uniqueBinarySearchTreeII.py
+
+99. spiralMatrixII.py
+
+100. zigZagConversion.py (smart one in pythonTrick, normal one in array)
