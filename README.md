@@ -203,3 +203,5 @@ Solutions to the leetcode problems
 99. spiralMatrixII.py
 
 100. zigZagConversion.py (smart one in pythonTrick, normal one in array)
+
+101. isValidParentheses.py
