@@ -6,13 +6,14 @@ class Solution:
             mid = (start+end)/2
             if A[mid] == target:
                 return True
-            # Normal order
+            # Possible normal order
             if A[start] < A[mid]:
+                # Target must be in the normal order part
                 if A[start] <= target and target < A[mid]:
                     return s(A,target,start,mid-1)
                 else:
                     return s(A,target,mid+1,end)
-            # Rotated order
+            # Must be rotated order
             if A[start] > A[mid]:
                 # The range is in the lesser part
                 if A[mid] < target and target <= A[end]:

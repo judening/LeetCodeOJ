@@ -205,3 +205,5 @@ Solutions to the leetcode problems
 100. zigZagConversion.py (smart one in pythonTrick, normal one in array)
 
 101. isValidParentheses.py
+
+102. findMedianSortedArrays.py

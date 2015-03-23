@@ -23,3 +23,5 @@ class Solution:
             # 2. deciding if we hit the next short
             stack.append(i)
         return max_area
+
+
